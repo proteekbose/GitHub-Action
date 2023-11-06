@@ -10,6 +10,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: master
+        env:
+          ACTIONS_STEP_DEBUG: true
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.10.0
         with:
